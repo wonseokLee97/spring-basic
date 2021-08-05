@@ -20,7 +20,7 @@ public class PrototypeTest {
         PrototypeBean prototypeBean2 = ac.getBean(PrototypeBean.class);
         assertThat(prototypeBean1).isNotSameAs(prototypeBean2);
 
-        ac.close();;
+        ac.close();
     }
 
     @Scope("prototype")
